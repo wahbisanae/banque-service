@@ -1,0 +1,149 @@
+/* Styles généraux */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Fond gris clair pour la page */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Conteneur principal de la page */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5; /* Fond gris clair */
+}
+
+/* Titre principal de la page */
+.title {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Section pour ajouter un compte et afficher la liste des comptes */
+.add-compte-section, .comptes-list-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Titres des sections (ajouter un compte, liste des comptes) */
+.add-compte-section h3, .comptes-list-section h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* Boutons */
+button {
+  padding: 8px 16px;  /* Taille plus petite */
+  background-color: #00bfff; /* Bleu clair */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;  /* Taille de police plus petite */
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0099cc; /* Bleu légèrement plus foncé au survol */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Liste des comptes */
+.comptes-list-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comptes-list-section li {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.comptes-list-section li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Gestion des erreurs (messages d'erreur) */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: #4a90e2;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #00bfff; /* Bleu clair au survol */
+}
+
+nav a:focus {
+  outline: none;
+}
+
+/* Formulaire d'ajout de compte */
+.add-compte-form input, .add-compte-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-compte-form input:focus, .add-compte-form select:focus {
+  border-color: #00bfff;
+  outline: none;
+}
+
+/* Responsivité : Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
